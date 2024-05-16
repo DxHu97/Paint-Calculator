@@ -39,4 +39,5 @@ class CalculateArea{
     }
 }
 
+export default CalculateArea;
 

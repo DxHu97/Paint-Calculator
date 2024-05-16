@@ -1,5 +1,5 @@
 //ask for how many walls, call the user input that many times
-import CalculateArea.js;
+import CalculateArea from "./CalculateArea";
 
 const areaTotal = new CalculateArea();
 areaTotal.addWall(5,10)
@@ -13,3 +13,4 @@ const oArea = areaTotal.calculateTotalObstacleArea();
 console.log(oArea);
 const totalArea = areaTotal.calculateTotalAreaPaintable();
 console.log(totalArea);
+
