@@ -32,7 +32,7 @@ class CalculatePrice{
                     this.price = 0;
                 } else if (litersNeeded < 5){
                     this.buckets = 1;
-                    this.price = 100;
+                    this.price = 30;
                 } else {
                     const bucketsNeeded = Math.ceil(litersNeeded/10)
                     this.buckets = bucketsNeeded;
