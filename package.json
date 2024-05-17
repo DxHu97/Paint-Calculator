@@ -1,5 +1,9 @@
 {
     "name": "Paint-Calculator",
     "version": "1.0.0",
-    "type": "module"
+    "type": "module",
+    "dependencies": {
+        "prompt-sync": "^4.2.0",
+        "prompt-sync-history": "^1.0.1"
+    }
 }
