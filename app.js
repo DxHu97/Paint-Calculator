@@ -41,11 +41,15 @@ async function main() {
 
     const priceTotal = new CalculatePrice(50, 0);
     priceTotal.setArea(totalArea);
-    priceTotal.amountOfBucketsNeeded();
+    const customerType = askQuestion("Would you like the cheapest option or best quality option?").toLowerCase();
+    if (customerType !== 'cheapest' && customerType !== 'best quality') {
+        throw new Error('Invalid input. Please enter "cheapest" or "best quality".');
+    }
+    priceTotal.amountOfBucketsNeeded(customerType);
     const totalPrice = priceTotal.calculateTotalCost();
     console.log("Total price in pounds:", totalPrice);
   } catch (error) {
-    console.error('Something went wrong');
+    console.error(error.message);
   }
 }
 
